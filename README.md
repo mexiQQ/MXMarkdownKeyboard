@@ -3,8 +3,8 @@
 ## Demo effect
 
 <div style="text-align: center">
-<img src="https://github.com/mexiQQ/MarkdownKeyboard/blob/master/Images/test.png" style="display:inline"/>
-<img src="https://github.com/mexiQQ/MarkdownKeyboard/blob/master/Images/head.png" style="display:inline"/>
+<img src="https://github.com/mexiQQ/MXMarkdownKeyboard/blob/master/Images/head.png" style="display:inline"/>
+<img src="https://github.com/mexiQQ/MXMarkdownKeyboard/blob/master/Images/head.png" style="display:inline"/>
 </div>
 
 
