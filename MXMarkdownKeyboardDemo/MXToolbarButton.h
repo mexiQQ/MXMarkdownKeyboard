@@ -12,7 +12,7 @@ typedef void (^eventHandlerBlock)();
 
 @interface MXToolbarButton : UIButton
 
-+ (instancetype)buttonWithTitle:(NSString *)title;
++ (instancetype)buttonWithImage:(NSString *)imageName;
 
 - (void)addEventHandler:(eventHandlerBlock)eventHandler forControlEvents:(UIControlEvents)controlEvent;
 

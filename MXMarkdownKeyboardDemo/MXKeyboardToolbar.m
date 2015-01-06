@@ -25,8 +25,8 @@
 }
 
 - (id)initWithTextView: (UITextView *)textView {
-    self = [super initWithFrame:CGRectMake(0, 0, self.window.rootViewController.view.bounds.size.width, 53)];
-    self.backgroundColor = [UIColor colorWithWhite:0.973 alpha:1.0];
+    self = [super initWithFrame:CGRectMake(0, 0, self.window.rootViewController.view.bounds.size.width, 51)];
+    self.backgroundColor = [UIColor colorWithRed:220/255.0f green:222/255.0f blue:226/255.0f alpha:1.0f];
     if (self) {
         _buttonsToAdd = [self buttonsForTextView:textView];
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
@@ -43,12 +43,12 @@
 
 - (UIView*)inputAccessoryView {
     _toolbarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 40)];
-    _toolbarView.backgroundColor = [UIColor colorWithWhite:0.973 alpha:1.0];
+    _toolbarView.backgroundColor = [UIColor colorWithRed:209/255.0f green:213/255.0f blue:219/255.0f alpha:1.0f];
     _toolbarView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     
     _topBorder = [CALayer layer];
     _topBorder.frame = CGRectMake(0.0f, 0.0f, self.bounds.size.width, 0.5f);
-    _topBorder.backgroundColor = [UIColor colorWithWhite:0.678 alpha:1.0].CGColor;
+    //_topBorder.backgroundColor = [UIColor colorWithWhite:0.678 alpha:1.0].CGColor;
     
     [_toolbarView.layer addSublayer:_topBorder];
     [_toolbarView addSubview:[self fakeToolbar]];
@@ -57,7 +57,7 @@
 }
 
 - (UIScrollView*)fakeToolbar {
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 53)];
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 51)];
     _scrollView.backgroundColor = [UIColor clearColor];
     _scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     _scrollView.showsHorizontalScrollIndicator = NO;
@@ -87,16 +87,7 @@
 
 - (NSArray*)buttonsForTextView:(UITextView *)textView {
     return @[
-             [self createButtonWithTitle:@"H" andEventHandler:^{
-                 NSRange selectionRange = textView.selectedRange;
-                 selectionRange.location += 3;
-                 selectionRange.length = 4;
-                 [textView insertText:@"## head"];
-                 textView.selectedRange = selectionRange;
-
-             }],
-             
-             [self createButtonWithTitle:@"B" andEventHandler:^{
+             [self createButtonWithImage:@"bold.png" andEventHandler:^{
                  NSRange selectionRange = textView.selectedRange;
                  selectionRange.location += 2;
                  selectionRange.length = 6;
@@ -104,30 +95,25 @@
                  textView.selectedRange = selectionRange;
              }],
              
-             [self createButtonWithTitle:@"/" andEventHandler:^{
+             [self createButtonWithImage:@"italic.png" andEventHandler:^{
                  NSRange selectionRange = textView.selectedRange;
                  selectionRange.location += 1;
                  selectionRange.length = 11;
                  [textView insertText:@"*Italic text*"];
                  textView.selectedRange = selectionRange;
-
+                 
              }],
              
-             [self createButtonWithTitle:@"---" andEventHandler:^{
+             [self createButtonWithImage:@"link.png" andEventHandler:^{
                  NSRange selectionRange = textView.selectedRange;
-                 if (textView.text.length == 0) {
-                     selectionRange.location += 4;
-                     [textView insertText:@"---\n"];
-                 }
-                 else {
-                     selectionRange.location += 5;
-                     [textView insertText:@"\n---\n"];
-                 }
+                 selectionRange.location += 12;
+                 selectionRange.length = 7;
+                 [textView insertText:@"[链接](http://example)"];
                  textView.selectedRange = selectionRange;
-
+                 
              }],
              
-             [self createButtonWithTitle:@">" andEventHandler:^{
+             [self createButtonWithImage:@"quote.png" andEventHandler:^{
                  NSRange selectionRange = textView.selectedRange;
                  selectionRange.location += 3;
                  if (textView.text.length == 0) {
@@ -139,24 +125,7 @@
                  textView.selectedRange = selectionRange;
              }],
              
-             [self createButtonWithTitle:@"Image" andEventHandler:^{
-                 NSRange selectionRange = textView.selectedRange;
-                 selectionRange.location += 16;
-                 selectionRange.length = 8;
-                 [textView insertText:@"![Image](http://resource)"];
-                 textView.selectedRange = selectionRange;
-             }],
-             
-             [self createButtonWithTitle:@"Link" andEventHandler:^{
-                 NSRange selectionRange = textView.selectedRange;
-                 selectionRange.location += 12;
-                 selectionRange.length = 7;
-                 [textView insertText:@"[链接](http://example)"];
-                 textView.selectedRange = selectionRange;
-
-             }],
-             
-             [self createButtonWithTitle:@"Code" andEventHandler:^{
+             [self createButtonWithImage:@"code.png" andEventHandler:^{
                  NSRange selectionRange = textView.selectedRange;
                  if (textView.text.length == 0) {
                      selectionRange.location += 4;
@@ -169,7 +138,15 @@
                  textView.selectedRange = selectionRange;
              }],
              
-             [self createButtonWithTitle:@"List" andEventHandler:^{
+             [self createButtonWithImage:@"img.png" andEventHandler:^{
+                 NSRange selectionRange = textView.selectedRange;
+                 selectionRange.location += 16;
+                 selectionRange.length = 8;
+                 [textView insertText:@"![Image](http://resource)"];
+                 textView.selectedRange = selectionRange;
+             }],
+
+             [self createButtonWithImage:@"ol.png" andEventHandler:^{
                  NSRange selectionRange = textView.selectedRange;
                  if (textView.text.length == 0) {
                      selectionRange.location += 2;
@@ -182,14 +159,35 @@
                      [textView insertText:@"\n- List Item"];
                  }
                  textView.selectedRange = selectionRange;
+             }],
+             
+             [self createButtonWithImage:@"title.png" andEventHandler:^{
+                 NSRange selectionRange = textView.selectedRange;
+                 selectionRange.location += 3;
+                 selectionRange.length = 4;
+                 [textView insertText:@"## head"];
+                 textView.selectedRange = selectionRange;
+
+             }],
+             
+             [self createButtonWithImage:@"hr.png" andEventHandler:^{
+                 NSRange selectionRange = textView.selectedRange;
+                 if (textView.text.length == 0) {
+                     selectionRange.location += 4;
+                     [textView insertText:@"---\n"];
+                 }
+                 else {
+                     selectionRange.location += 5;
+                     [textView insertText:@"\n---\n"];
+                 }
+                 textView.selectedRange = selectionRange;
              }]];
 }
 
-- (MXToolbarButton*)createButtonWithTitle:(NSString*)title andEventHandler:(void(^)())handler {
-    MXToolbarButton *button = [MXToolbarButton buttonWithTitle:title];
+- (MXToolbarButton*)createButtonWithImage:(NSString*)imageName andEventHandler:(void(^)())handler {
+    MXToolbarButton *button = [MXToolbarButton buttonWithImage:imageName];
     [button addEventHandler:handler forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
-
 
 @end

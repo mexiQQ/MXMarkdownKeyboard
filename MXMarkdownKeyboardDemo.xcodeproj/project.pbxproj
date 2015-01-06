@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF292C791A5BD4DF00DFF896 /* bold.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C6D1A5BD4DF00DFF896 /* bold.png */; };
+		AF292C7A1A5BD4DF00DFF896 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C6E1A5BD4DF00DFF896 /* code.png */; };
+		AF292C7B1A5BD4DF00DFF896 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C6F1A5BD4DF00DFF896 /* help.png */; };
+		AF292C7C1A5BD4DF00DFF896 /* hr.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C701A5BD4DF00DFF896 /* hr.png */; };
+		AF292C7D1A5BD4DF00DFF896 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C711A5BD4DF00DFF896 /* img.png */; };
+		AF292C7E1A5BD4DF00DFF896 /* italic.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C721A5BD4DF00DFF896 /* italic.png */; };
+		AF292C7F1A5BD4DF00DFF896 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C731A5BD4DF00DFF896 /* link.png */; };
+		AF292C801A5BD4DF00DFF896 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C741A5BD4DF00DFF896 /* more.png */; };
+		AF292C811A5BD4DF00DFF896 /* ol.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C751A5BD4DF00DFF896 /* ol.png */; };
+		AF292C821A5BD4DF00DFF896 /* quote.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C761A5BD4DF00DFF896 /* quote.png */; };
+		AF292C831A5BD4DF00DFF896 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C771A5BD4DF00DFF896 /* title.png */; };
+		AF292C841A5BD4DF00DFF896 /* ul.png in Resources */ = {isa = PBXBuildFile; fileRef = AF292C781A5BD4DF00DFF896 /* ul.png */; };
 		AF5C01011A2B03370060ED88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C01001A2B03370060ED88 /* main.m */; };
 		AF5C01041A2B03370060ED88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C01031A2B03370060ED88 /* AppDelegate.m */; };
 		AF5C01071A2B03370060ED88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C01061A2B03370060ED88 /* ViewController.m */; };
@@ -29,6 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF292C6D1A5BD4DF00DFF896 /* bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bold.png; sourceTree = "<group>"; };
+		AF292C6E1A5BD4DF00DFF896 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		AF292C6F1A5BD4DF00DFF896 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		AF292C701A5BD4DF00DFF896 /* hr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hr.png; sourceTree = "<group>"; };
+		AF292C711A5BD4DF00DFF896 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		AF292C721A5BD4DF00DFF896 /* italic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = italic.png; sourceTree = "<group>"; };
+		AF292C731A5BD4DF00DFF896 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
+		AF292C741A5BD4DF00DFF896 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		AF292C751A5BD4DF00DFF896 /* ol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ol.png; sourceTree = "<group>"; };
+		AF292C761A5BD4DF00DFF896 /* quote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quote.png; sourceTree = "<group>"; };
+		AF292C771A5BD4DF00DFF896 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		AF292C781A5BD4DF00DFF896 /* ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ul.png; sourceTree = "<group>"; };
 		AF5C00FB1A2B03370060ED88 /* MXMarkdownKeyboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXMarkdownKeyboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5C00FF1A2B03370060ED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF5C01001A2B03370060ED88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +90,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF292C6C1A5BD4DF00DFF896 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF292C6D1A5BD4DF00DFF896 /* bold.png */,
+				AF292C6E1A5BD4DF00DFF896 /* code.png */,
+				AF292C6F1A5BD4DF00DFF896 /* help.png */,
+				AF292C701A5BD4DF00DFF896 /* hr.png */,
+				AF292C711A5BD4DF00DFF896 /* img.png */,
+				AF292C721A5BD4DF00DFF896 /* italic.png */,
+				AF292C731A5BD4DF00DFF896 /* link.png */,
+				AF292C741A5BD4DF00DFF896 /* more.png */,
+				AF292C751A5BD4DF00DFF896 /* ol.png */,
+				AF292C761A5BD4DF00DFF896 /* quote.png */,
+				AF292C771A5BD4DF00DFF896 /* title.png */,
+				AF292C781A5BD4DF00DFF896 /* ul.png */,
+			);
+			name = Resources;
+			path = MXMarkdownKeyboard/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
 		AF5C00F21A2B03370060ED88 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +173,7 @@
 		AF5C01241A2B03C90060ED88 /* MXMarkdownKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				AF292C6C1A5BD4DF00DFF896 /* Resources */,
 				AF5C01251A2B03DE0060ED88 /* MXKeyboardToolbar.h */,
 				AF5C01261A2B03DE0060ED88 /* MXKeyboardToolbar.m */,
 				AF5C01271A2B03DE0060ED88 /* MXToolbarButton.h */,
@@ -217,9 +262,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF292C7C1A5BD4DF00DFF896 /* hr.png in Resources */,
+				AF292C7F1A5BD4DF00DFF896 /* link.png in Resources */,
+				AF292C831A5BD4DF00DFF896 /* title.png in Resources */,
+				AF292C791A5BD4DF00DFF896 /* bold.png in Resources */,
+				AF292C7A1A5BD4DF00DFF896 /* code.png in Resources */,
+				AF292C811A5BD4DF00DFF896 /* ol.png in Resources */,
+				AF292C7B1A5BD4DF00DFF896 /* help.png in Resources */,
 				AF5C010A1A2B03370060ED88 /* Main.storyboard in Resources */,
+				AF292C801A5BD4DF00DFF896 /* more.png in Resources */,
+				AF292C7E1A5BD4DF00DFF896 /* italic.png in Resources */,
+				AF292C841A5BD4DF00DFF896 /* ul.png in Resources */,
 				AF5C010F1A2B03370060ED88 /* LaunchScreen.xib in Resources */,
 				AF5C010C1A2B03370060ED88 /* Images.xcassets in Resources */,
+				AF292C7D1A5BD4DF00DFF896 /* img.png in Resources */,
+				AF292C821A5BD4DF00DFF896 /* quote.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +489,7 @@
 				AF5C01201A2B03370060ED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF5C01211A2B03370060ED88 /* Build configuration list for PBXNativeTarget "MXMarkdownKeyboardDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +498,7 @@
 				AF5C01231A2B03370060ED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
