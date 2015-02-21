@@ -14,7 +14,7 @@
 
 ```
    platform :ios, '7.0'
-   pod "MXMarkdownKeyboard", "~> 0.0.1"
+   pod "MXMarkdownKeyboard", "~> 0.0.4"
 ```
 #### Without Cocoapods
    just like the Demo 
