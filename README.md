@@ -10,13 +10,13 @@
 
 ## Installation
 
-#### Cocoapods
+#### CocoaPods
 
 ```
    platform :ios, '7.0'
    pod "MXMarkdownKeyboard", "~> 0.0.4"
 ```
-#### Without Cocoapods
+#### Without CocoaPods
    just like the Demo 
 
 ## Use
